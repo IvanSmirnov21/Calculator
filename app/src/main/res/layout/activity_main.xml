@@ -7,17 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Калькулятор"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Калькулятор"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,9 +45,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Введите число"
-            android:textStyle="italic"
             android:textAlignment="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/znak"
